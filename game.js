@@ -68,3 +68,84 @@ function ini() {
           return "e";
         }
       }
+  
+      function getPickFromNum(item) {
+        if (item == 1) {
+          return "Rock";
+        } else if (item == 2) {
+          return "Paper";
+        } else if (item == 3) {
+          return "Scissors";
+        } else if (item == 4) {
+          return "Lizard";
+        } else if (item == 5) {
+          return "Spock";
+        } else {
+          return "e";
+        }
+      }
+  
+      function battle(player, bot) {
+        if (player == 1) {
+          if (bot == 1) {
+            Draw = true;
+          } else if (bot == 2) {
+            Lose = true;
+          } else if (bot == 3) {
+            Win = true;
+          } else if (bot == 4) {
+            Win = true;
+          } else if (bot == 5) {
+            Lose = true;
+          }
+        } else if (player == 2) {
+          if (bot == 1) {
+            Win = true;
+          } else if (bot == 2) {
+            Draw = true;
+          } else if (bot == 3) {
+            Lose = true;
+          } else if (bot == 4) {
+            Lose = true;
+          } else if (bot == 5) {
+            Win = true;
+          }
+        } else if (player == 3) {
+          if (bot == 1) {
+            Lose = true;
+          } else if (bot == 2) {
+            Win = true;
+          } else if (bot == 3) {
+            Draw = true;
+          } else if (bot == 4) {
+            Win = true;
+          } else if (bot == 5) {
+            Lose = true;
+          }
+        } else if (player == 4) {
+          if (bot == 1) {
+            Lose = true;
+          } else if (bot == 2) {
+            Win = true;
+          } else if (bot == 3) {
+            Lose = true;
+          } else if (bot == 4) {
+            Draw = true;
+          } else if (bot == 5) {
+            Win = true;
+          }
+        } else if (player == 5) {
+          if (bot == 1) {
+            Win = true;
+          } else if (bot == 2) {
+            Lose = true;
+          } else if (bot == 3) {
+            Win = true;
+          } else if (bot == 4) {
+            Lose = true;
+          } else if (bot == 5) {
+            Draw = true;
+          }
+        }
+      }
+  
