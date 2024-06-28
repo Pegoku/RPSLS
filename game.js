@@ -23,3 +23,48 @@ function ini() {
   
   var choice = 0;
   
+  var game = document.getElementById("game");
+  function rock() {
+    console.log("hi :)");
+    play(1);
+  }
+  function paper() {
+    console.log("hi :)");
+    play(2);
+  }
+  function scissors() {
+    console.log("hi :)");
+    play(3);
+  }
+  function lizard() {
+    console.log("hi :)");
+    play(4);
+  }
+  function spock() {
+    console.log("hi :)");
+    play(5);
+  }
+  function play(choice) {
+    if (playerLives >= 1 && botLives >= 1) {
+      var Win = false;
+      var Lose = false;
+      var Draw = false;
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+  
+      function getNumFromPick(item) {
+        if (item == "Rock") {
+          return 1;
+        } else if (item == "Paper") {
+          return 2;
+        } else if (item == "Scissors") {
+          return 3;
+        } else if (item == "Lizard") {
+          return 4;
+        } else if (item == "Spock") {
+          return 5;
+        } else {
+          return "e";
+        }
+      }
