@@ -10,3 +10,16 @@ function ini() {
     document.body.style.backgroundColor = "#99ff99";
   }
   ini();
+  document.body.style.backgroundColor = "#99ff99";
+  var fstTime = true;
+  var name = prompt("What is your name?");
+  
+  var Win = false;
+  var Lose = false;
+  var Draw = false;
+  
+  var playerLives = 3;
+  var botLives = 3;
+  
+  var choice = 0;
+  
