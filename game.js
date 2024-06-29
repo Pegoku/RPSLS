@@ -173,3 +173,13 @@ function ini() {
       if (Draw) {
         document.writeln("It's a draw<br>");
       }
+  
+      document.writeln(playerLives + " - " + botLives + "<br>");
+    }
+    if (playerLives <= 0) {
+      document.writeln('Winner: Computer<br><button onClick="window.location.reload();">Play again</button>');
+      document.body.style.backgroundImage = "url('https://cadenaser.com/resizer/LOg8G6ZOUs27cnp7d5XWPwN0aWc=/1200x900/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/VUXJ4NGPPJIGVPKH37DJM5MCOI.jpg')";
+    } else if (botLives <= 0) {
+      document.writeln("Winner: " + name + '<br><button onClick="window.location.reload();">Play again</button>');
+    }
+  }
