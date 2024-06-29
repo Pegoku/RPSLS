@@ -149,3 +149,27 @@ function ini() {
         }
       }
   
+      const botChoice = getRandomInt(1, 6);
+      if (fstTime) {
+        fstTime = false;
+        ini();
+      }
+      document.writeln(
+        name + ": " + getPickFromNum(choice) + "<br>Bot: " + getPickFromNum(botChoice) + "<br>"
+      );
+  
+      battle(choice, botChoice);
+  
+      if (Win) {
+        document.writeln("You won<br>");
+        botLives = botLives - 1;
+      }
+  
+      if (Lose) {
+        document.writeln("You lost<br>");
+        playerLives = playerLives - 1;
+      }
+  
+      if (Draw) {
+        document.writeln("It's a draw<br>");
+      }
